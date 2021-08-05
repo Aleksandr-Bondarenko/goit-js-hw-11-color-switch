@@ -17,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/Aleksandr-Bondarenko/goit-js-hw-11-color-switch/issues"
   },
-  "homepage": "https://Aleksandr-Bondarenko/github.io/goit-js-hw-11-color-switch#readme",
+  "homepage": "https://Aleksandr-Bondarenko/github.io/goit-js-hw-11-color-switch",
   "devDependencies": {
     "parcel-bundler": "^1.12.5",
     "parcel-plugin-clean-dist": "0.0.6"
