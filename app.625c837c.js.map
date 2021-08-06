@@ -1,1 +1,0 @@
-{"version":3,"sources":["app.js"],"names":["console","log"],"mappings":";AAAAA,QAAQC,IAAI,SACZD,QAAQC,IAAI","file":"app.625c837c.js","sourceRoot":"..\\src","sourcesContent":["console.log(\"Hello\");\r\nconsole.log(\"New build\");\r\n"]}
