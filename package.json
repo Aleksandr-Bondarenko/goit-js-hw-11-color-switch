@@ -4,7 +4,7 @@
   "description": "First task of JS home work",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel src/index.html",
+    "dev": "parcel src/index.html -p 4140",
     "build": "parcel build src/index.html --public-url /goit-js-hw-11-color-switch/",
     "deploy": "gh-pages -d dist",
     "predeploy": "npm run build"
