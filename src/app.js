@@ -9,13 +9,16 @@ let timerId = null;
 
 startBtn.style.cursor = "pointer";
 stopBtn.style.cursor = "not-allowed";
+stopBtn.setAttribute("disabled", true);
 
 const onStartClick = () => {
   console.log("click on start");
 
   timerId = setInterval(changeBgc, 1000);
-  stopBtn.addEventListener("click", onStopClick);
-  startBtn.removeEventListener("click", onStartClick);
+
+  startBtn.setAttribute("disabled", true);
+  stopBtn.removeAttribute("disabled");
+
   startBtn.style.cursor = "not-allowed";
   stopBtn.style.cursor = "pointer";
 };
@@ -23,8 +26,10 @@ const onStartClick = () => {
 const onStopClick = () => {
   console.log("click on stop");
   clearInterval(timerId);
-  stopBtn.removeEventListener("click", onStopClick);
-  startBtn.addEventListener("click", onStartClick);
+
+  stopBtn.setAttribute("disabled", true);
+  startBtn.removeAttribute("disabled");
+
   startBtn.style.cursor = "pointer";
   stopBtn.style.cursor = "not-allowed";
 };
